@@ -1,16 +1,12 @@
-export const App = () => {
+import ProfileList from './ProfileList/ProfileList'
+import user from '../user';
+
+const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div>
+      <ProfileList item={user}/>
     </div>
   );
 };
+
+export default App;
