@@ -1,4 +1,4 @@
-import Profile from "../Profile/Profile"
+import Profile from "components/SocialProfile/Profile/Profile";
 
 
 const ProfileList = ({ item }) => {
