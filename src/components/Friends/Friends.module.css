@@ -1,0 +1,44 @@
+.friendList {
+	display: grid;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 50px;
+
+	max-width: 250px;
+	max-height: 500px;
+
+	row-gap: 10px;
+}
+
+.item {
+	display: grid;
+	padding: 15px;
+	gap: 10px;
+
+	background-color: white;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+	grid-template-columns: 25px 50px 1fr;
+}
+
+.status {
+	display: grid;
+	margin: auto;
+
+	border-radius: 50%;
+
+	width: 20px;
+	height: 20px;
+
+	background-color: green;
+}
+
+.name {
+	display: grid;
+	justify-items: start;
+	align-items: center;
+
+	font-weight: 500;
+	font-size: 24px;
+}
+

@@ -1,10 +1,11 @@
+
 import Profile from "components/SocialProfile/Profile/Profile";
+import css from 'components/SocialProfile/Profile/Profile.module.css'
 
 
 const ProfileList = ({ item }) => {
 	return (
-		<ul>
-		<li>
+		<div className={css.wrapper}>
 			<Profile
         		username={item.username}
         		tag={item.tag}
@@ -14,8 +15,7 @@ const ProfileList = ({ item }) => {
         		views={item.stats.views}
         		likes={item.stats.likes}
   />
-		</li>
-	</ul>
+</div>
 	)
 }
 

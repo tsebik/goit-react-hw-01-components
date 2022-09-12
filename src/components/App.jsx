@@ -7,6 +7,7 @@ import data from 'path/data'
 import friends from 'path/friends'
 import transactions from 'path/transactions'
 
+
 const App = () => {
   return (
     <div>
