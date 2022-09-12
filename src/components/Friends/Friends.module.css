@@ -33,6 +33,18 @@
 	background-color: green;
 }
 
+.statusFalse {
+	display: grid;
+	margin: auto;
+
+	border-radius: 50%;
+
+	width: 20px;
+	height: 20px;
+
+	background-color: red;
+}
+
 .name {
 	display: grid;
 	justify-items: start;
