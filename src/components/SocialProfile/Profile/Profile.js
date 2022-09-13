@@ -1,11 +1,24 @@
 import PropTypes from 'prop-types';
-import css from 'components/SocialProfile/Profile/Profile.module.css'
+import css from 'components/SocialProfile/Profile/Profile.module.css';
 
-const Profile = ({ avatar, username, tag, location, followers, views, likes }) => {
+const Profile = ({
+  avatar,
+  username,
+  tag,
+  location,
+  followers,
+  views,
+  likes,
+}) => {
   return (
     <div className={css.profile}>
       <div className={css.description}>
-        <img src={avatar} alt="User avatar" className={css.avatar} width={100} />
+        <img
+          src={avatar}
+          alt="User avatar"
+          className={css.avatar}
+          width={100}
+        />
         <p className={css.name}>{username}</p>
         <p className={css.tag}>@{tag}</p>
         <p className={css.location}>{location}</p>
@@ -27,7 +40,7 @@ const Profile = ({ avatar, username, tag, location, followers, views, likes }) =
       </ul>
     </div>
   );
-}
+};
 
 Profile.propTypes = {
   avatar: PropTypes.string.isRequired,
@@ -37,7 +50,6 @@ Profile.propTypes = {
   followers: PropTypes.number.isRequired,
   views: PropTypes.number.isRequired,
   likes: PropTypes.number.isRequired,
-}
+};
 
 export default Profile;
-
